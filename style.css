@@ -60,46 +60,23 @@ h1 {
 
 /* =====  HEADER ======*/
 #header {
-  border-bottom: 1px solid #e4e4e4;
   width: 100vw;
   height: 6rem;
   position: fixed;
+  padding: 0 2rem;
+  box-shadow: 2px 1px 4px rgba(0,0,0,0.3);
+
   display: flex;
   justify-content: space-between; 
-  padding: 0 2rem;
   align-items: center;
+
   background-color: var(--title-color);
-
+  z-index: 10000;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4.5rem;
-}
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  gap: 2rem;
-  cursor: pointer;
-}
 
-.menu .active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--base-color);
-  width: 3.5rem;
-  height: 2rem;
-  border-bottom: 2px solid var(--base-color);
-  border-radius: 0.4rem;
-  box-sizing: border-box;
-  cursor: pointer;
-}
+/* =====  LOGO ======*/
 
 .logo {
   font: 700 1.31rem 'Montserrat', sans-serif; 
@@ -123,7 +100,53 @@ nav {
   border-radius: 50%;
   border: 2px solid var(--border-color);
   margin-left: -2.3rem;
+  background-color: var(--title-color);
 }
+
+
+
+/* =====  NAVIGATION ======*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+
+
+.menu .active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--base-color);
+  width: 3.5rem;
+  height: 2rem;
+  border-bottom: 2px solid var(--base-color);
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
 
 
 /* =====  HOME ========*/
@@ -167,24 +190,55 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .audioContet img {
   width: 36rem;
   height: 23rem;
   position: absolute;
-  left: 34rem;
-  margin-top: 2.3rem;
-
+  right: 7rem;
+  margin-top: -8.5rem;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
+
 .left-content {
   width: 40rem;
   height: 30rem;
   background-color: #080808;
-  margin-top: 7rem;
-  margin-bottom: 3rem;
+  color: var(--title-color);
+  margin-top: 5rem;
   position: relative;
   top: 0;
-  left: 0;
+  left: 5rem;
 }
+
+.left-content h3 {
+  color: var(--base-color);
+  margin-left: -13rem;
+  margin-top: 4.2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.audioText {
+  width: 16rem;
+  height: 20rem;
+  margin-left: 10rem;
+}
+
+.audioText p {
+  text-align: justify;
+  margin: 2rem 2rem 0 0;
+}
+
+.par {
+  width: 7rem;
+  height: 2rem;
+  color: var(--base-color);
+  border-bottom: 3px solid var(--base-color);
+  border-radius: 10px;
+  padding-left: 0.7rem;
+}
+
 

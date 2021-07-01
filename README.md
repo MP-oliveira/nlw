@@ -1,0 +1,1 @@
+Este curso tem me ajudado a fimar conceitos baiscos que eu ja conhecia.
